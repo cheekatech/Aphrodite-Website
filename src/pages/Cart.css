@@ -1,0 +1,129 @@
+.noCart {
+  padding-top: 10rem;
+  text-align: center;
+  padding-bottom: 10rem;
+  color: #3f2305 !important;
+  font-size: xx-large;
+}
+.cartHome {
+  padding-top: 7rem;
+  color: #3f2305;
+  background-color: #f5f5f5;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+    box-sizing: border-box;
+}
+.cartHome .removeBtn {
+  background-color: transparent;
+  border: none;
+  transition: 0.3s ease;
+}
+.cartHome .removeBtn:hover {
+  transform: scale(1.1);
+}
+.cartContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.updateBtn button {
+  border: none;
+  background-color: transparent;
+  padding: 0 .2rem;
+  transition: 0.3s ease;
+  border: 1px solid #3f2305;
+  font-size: 1rem;
+  margin-left: .3rem;
+  margin-right: .3rem;
+}
+.updateBtn button:hover:nth-child(1) {
+  background-color: red;
+}
+.updateBtn button:hover:nth-child(3) {
+  background-color: green;
+}
+
+.checkoutDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 1rem;
+  position: relative;
+}
+.checkoutForm {
+  background-color: #dfd7bf;
+  padding: 1rem;
+  width: 40%;
+  height: 25rem;
+}
+.checkoutForm h5, .cartOrders h5 {
+  font-size: larger;
+  margin-bottom: 1rem;
+}
+.checkoutForm input {
+  border: 2px solid #3f2305;
+}
+.cartOrders {
+  background-color: white;
+  width: 50%;
+  padding: 1rem;
+  position: absolute;
+  right: 1rem;
+}
+.cartOrders .orders {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+.cartOrders .orders span:nth-child(2) {
+  margin-left: 2rem;
+  color: red;
+}
+.cartOrders .total {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.cartOrders .total strong:nth-child(2) {
+  color: green;
+}
+.cartOrders button {
+  padding: .3rem;
+  background-color: #3f2305;
+  color: #f5f5f5;
+}
+@media (max-width: 480px) {
+  .cartHome {
+  padding-top: 11rem;
+  }
+
+  .cartHome .cartList {
+    overflow-x: scroll;
+  }
+  .cartHome tbody img {
+    width: 12vw;
+  }
+  .cartHome tbody button img {
+    width: 7vw;
+  }
+  .cartHome tbody h6 {
+    font-size: large;
+  }
+  .checkoutDetails {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: none;
+}
+.checkoutForm {
+  width: 80vw;
+}
+.cartOrders {
+  width: 80vw;
+  position: sticky;
+}
+
+}

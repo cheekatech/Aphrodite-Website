@@ -1,0 +1,194 @@
+.contact {
+  padding-top: 5rem;
+  color: #3f2305;
+  background-color: #f5f5f5;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+  box-sizing: border-box;
+}
+.contactHero {
+  height: 25rem;
+  background-size: cover;
+  background-position: center 60%;
+}
+.contactHero h1 {
+  color: #dfd7bf;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+.mapHero {
+  margin-top: 0.2rem;
+  height: 25rem;
+  background-size: cover;
+  background-position: center 70%;
+}
+.contactBody {
+  display: flex;
+  justify-content: space-between;
+}
+.contactForm {
+  border-radius: 10px;
+  height: 45rem;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5vw;
+  box-shadow: 3px 3px 3px 3px #dfd7bf;
+}
+.contactForm legend h2 {
+  padding-left: 2vw;
+}
+.contactForm p {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+  margin-top: 2rem;
+  gap: 1vw;
+}
+.contactForm span {
+  color: red;
+}
+.contactForm input {
+  width: 30vw;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 1vw;
+  border: 2px solid #dfd7bf;
+  color: #3f2305;
+}
+.contactForm input:active {
+  border: 2px solid #dfd7bf;
+}
+.contactForm textarea {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding-left: 0.8rem;
+  padding-top: 0.5rem;
+  margin-top: 4px;
+  color: #3f2305;
+  border: 2px solid #dfd7bf;
+  text-align: left;
+}
+.contactForm button {
+  width: 10vw;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: #3f2305;
+  color: #dfd7bf;
+  transition: 0.6s ease;
+}
+.contactForm button:hover {
+  transform: scale(1.1);
+}
+
+.contactSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactAddress {
+  border: 3px solid #dfd7bf;
+  border-radius: 1rem;
+  padding-bottom: 3rem;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:  15vw 5vw 5vw 5vw;
+  align-items: center;
+  font-size: larger;
+}
+.contactAddress h2 {
+  margin-top: 5rem;
+}
+.contactAddress p {
+  margin-top: 1rem;
+}
+.contactAddress a {
+  text-decoration: none;
+  color: #3f2305;
+}
+.contactAddress a:hover {
+  text-decoration: underline;
+}
+.contactSide .mediaContainer {
+  text-align: center;
+  width: 80%;
+}
+.contactSide .medias {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .contactHero h1 {
+  font-size: 4.3rem;
+}
+.contactForm {
+  margin-top: 2rem;
+  margin-left: 1vw;
+  height: 40rem;
+}
+.contactForm input {
+  width: 40vw;
+}
+}
+@media (max-width: 608px) {
+  .contactHero h1 {
+  font-size: 3.5rem;
+}
+.contactAddress h2 {
+  font-size: larger;
+}
+.contactAddress p {
+  font-size: large;
+}
+.contactSide .mediaContainer {
+  margin-top: 2rem;
+}
+.contactSide .medias {
+  margin-top: 1rem;
+}
+.contactSide .medias img {
+  width: 35px;
+}
+}
+
+@media (max-width: 480px) {
+  .contact {
+  padding-top: 9rem;
+}
+  .contactHero h1 {
+  font-size: 2.2rem;
+}
+.contactBody {
+  flex-direction: column;
+  align-items: center;
+}
+.contactForm {
+  width: 90vw;
+}
+.contactForm input {
+  width: 80vw;
+  border-radius: 15px;
+}
+.contactForm button {
+  width: 40vw;
+}
+.contactAddress {
+  width: 90vw;
+}
+.contactAddress h2 {
+  margin-top: 2.2rem;
+}
+.contactSide .medias {
+  margin-bottom: 1rem;
+}
+}

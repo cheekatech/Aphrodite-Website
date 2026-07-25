@@ -1,0 +1,125 @@
+.account a {
+  text-decoration: none;
+  color: #3f2305;
+}
+.account {
+  display: flex;
+  justify-content: space-between;
+  color: #3f2305;
+  background-color: #f5f5f5;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+  box-sizing: border-box;
+  padding-top: 2rem;
+}
+
+.account .accountBar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+  height: 50rem;
+  align-items: center;
+  width: 15%;
+  background-color: #dfd7bf;
+}
+.welcomeText {
+  margin-bottom: 2rem;
+  font-size: larger;
+}
+.account .accountBar a {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+  border-bottom: 1px solid #3f2305;
+  transition: 0.6s ease;
+}
+.account .accountBar a:hover, .account .accountBar a.active {
+  background-color: #989079;
+  text-decoration: none;
+}
+.wishlistCount {
+  background-color: #3f2305;
+  color: #f5f5f5;
+  border-radius: 40%;
+  padding: 0.3rem;
+  margin-left: 0.3rem;
+}
+.account .logout {
+  text-align: center;
+  width: 100%;
+}
+.account .accountBar button {
+  padding: 1rem;
+  color: red;
+  font-size: large;
+  border: none;
+  transition: 0.6s ease;
+  border-top: 1px solid red;
+  background: transparent;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+.account .accountBar button:hover {
+  background-color: #989079;
+}
+.accountBar a:hover {
+  text-decoration: underline;
+}
+
+.accountLayout {
+  overflow-y: scroll;
+  width: 85%;
+  flex-wrap: wrap;
+  height: 50rem;
+}
+@media (max-width: 480px) {
+  .account {
+  padding-top: 0;
+  flex-direction: column;
+}
+.account .accountBar {
+  flex-direction: row;
+  padding-top: 0;
+  margin-top: 9rem;
+  height: 5rem;
+  width: 100vw;
+  overflow-x: scroll;
+}
+.welcomeText {
+  padding-right: 1rem;
+  margin-bottom: -1rem;
+  font-size: large;
+  border-right: 3px solid #3f2305;
+}
+.account .accountBar a {
+  width: 30vw;
+  padding: .5rem;
+  border-bottom: none;
+}
+.wishlistCount {
+  font-size: small;
+  border-radius: 40%;
+  padding: 0.1rem;
+  margin-left: 0.1rem;
+}
+.account .logout {
+  text-align: center;
+}
+.account .accountBar button {
+  padding: .5rem;
+  font-size: small;
+  border-top: none;
+  width: 20vw;
+  margin-top: 0;
+}
+
+.accountLayout {
+  width: 100vw;
+}
+}

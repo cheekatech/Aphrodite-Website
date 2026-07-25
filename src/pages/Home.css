@@ -1,0 +1,452 @@
+
+button {
+  cursor: pointer;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  cursor: context-menu;
+}
+.home {
+  background-color: #f5f5f5;
+  color: #3f2305;
+  padding-top: 5rem;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+  box-sizing: border-box;
+}
+.home .heros .hero {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: local;
+  height:70vw;
+  width: 100%;
+  position: relative;
+  transition: 1.5s ease-in-out;
+}
+.home .heros .hero .heroText {
+  position: absolute;
+  top: 15vw;
+  left: 4%;
+  animation: fadeSlideIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero .heroLogo img {
+  width: 30rem;
+}
+.hero .heroLogo h1 {
+
+  font-size: 5rem;
+  text-align: end;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.home .heros .hero .heroText h2 {
+  margin-bottom: 4vw;
+  font-size: 60px;
+}
+.home .heros .hero .heroText h5 {
+  font-size: larger;
+  margin-bottom: 20px;
+}
+.home .heros .hero .heroText h6 {
+  font-size: x-large;
+  max-width: 95vw;
+}
+.home .heros .hero .heroText p {
+  max-width: 90vw;
+}
+.home .heros .hero .heroText button {
+  margin: 10rem;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: larger;
+  border: transparent;
+  background-color: #3f2305;
+  color: #f5f5f5;
+  box-shadow: 0 0  15px #3f2305;
+  transition: 0.6s ease;
+}
+.home .heros .hero .heroText button:hover {
+  transform: scale(1.1);
+}
+.home .hero .heroSlider-btn{
+  font-size: 2.5rem;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50vh;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50%;
+  transition:  all 0.3s;
+ }
+ .home .hero .heroSlider-btn:hover {
+  background-color: #dfd7bf;
+ }
+ .heroSliderNext {
+  right: 0;
+ }
+.heroSlider-dots {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.6rem;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border: 2px solid white;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: white;
+}
+.bigBanners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  
+}
+.bigBanner {
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.bigBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: top center;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.bigBanner:hover::before {
+  transform: scale(1.08);
+}
+
+.bigBannerText {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.bigBannerText h1 {
+  text-align: center;
+  font-size: 6vw;
+  margin-bottom: 30px;
+  margin-top: 10rem;
+}
+.bigBannerText p {
+  margin-left: 20px;
+  max-width: 90vw;
+}
+.bigBannerText button {
+  background: #dfd7bf;
+  padding: 5px;
+  margin-left: 20px;
+  color: #3f2305;
+  border: 2px solid #3f2305;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 1rem;
+  transition: 1.2s ease;
+  box-shadow: 2px 4px 6px #3f2305;
+}
+.bigBannerText button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #3f2305;
+  transition: left 0.6s ease;
+  z-index: -1;
+}
+.bigBannerText button:hover::before {
+  left: 0;
+
+}
+.bigBannerText button:hover {
+  color: #f5f5f5;
+}
+
+.smallBanners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  
+}
+.smallBanner {
+  padding-top: 5rem;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: local;
+}
+.smallBanner:hover button::before {
+  left: 0;
+}
+
+.smallBanner:hover button {
+  color: #3f2305;
+}
+.smallBannerText {
+  margin-left: 20px;
+  margin-top: 5rem;
+
+}
+.smallBannerText h1 {
+  color: #dfd7bf;
+  margin-bottom: 5rem;
+}
+.smallBanner p {
+  color: #f5f5f5;
+}
+.smallBanner button {
+  position: relative;
+  z-index: 1;
+  color: #f5f5f5;
+  background-color: transparent;
+  border: 2px solid #f5f5f5;
+  padding: 2px;
+  width: 100px;
+  height: 40px;
+  margin-top: 1rem;
+  overflow: hidden;
+
+}
+.smallBannerText button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  transition: left 0.6s ease;
+  z-index: -1;
+}
+.smallBannerText button:hover::before {
+  left: 0;
+}
+.smallBannerText button:hover {
+  color: #3f2305;
+  transition: left 0.6s ease;
+}
+
+
+
+.flashSales h2 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.trendingNow h2 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item:nth-child(1),
+  .grid-item:nth-child(2) {
+    grid-column: span 2;
+  }
+
+  .grid-item:nth-child(3),
+  .grid-item:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .grid-item:nth-child(5) {
+    grid-column: span 1;
+  }
+
+
+  .smallBanners {
+  grid-template-columns: repeat(2, 1fr);
+  }
+  .smallBanner {
+  padding-top: 3rem;
+  }
+
+  .home .heros .hero {
+  height: 40rem;
+}
+.home .heros .hero .heroText {
+  top: 10rem;
+}
+
+}
+
+@media (max-width: 608px) {
+  .hero .heroLogo img {
+  width: 20rem;
+}
+.home .heros .hero .heroText h2 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.home .heros .hero {
+  height: 45rem;
+}
+.home .heros .hero .heroText button {
+  font-size: small;
+}
+.bigBanners {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+}
+
+@media (max-width: 480px) {
+
+
+
+/*
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    grid-column: span 1;
+  }
+*/
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .home {
+  padding-top: 9rem;
+}
+
+.home .heros .hero {
+  height: 40rem;
+}
+.home .heros .hero .heroText {
+  top: 13rem;
+}
+
+.hero .heroLogo img {
+  width: 18rem;
+}
+.hero .heroLogo h1 {
+  font-size: 3rem;
+}
+.home .heros .hero .heroText h2 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.home .heros .hero .heroText h5 {
+  font-size: large;
+  margin-bottom: 20px;
+}
+.home .heros .hero .heroText h6 {
+  font-size: large;
+  margin-bottom: 30px;
+}
+.home .heros .hero .heroText p {
+  font-size: small;
+}
+.home .heros .hero .heroText button {
+  margin: 4rem;
+  font-size: small;
+}
+.bigBannerText h1 {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+}
+  .smallBanners {
+  grid-template-columns: repeat(1, 1fr);
+  }
+  .smallBanner {
+  padding-top: 2rem;
+  }
+  .bigBanners {
+  grid-template-columns: repeat(1, 1fr);
+}
+.smallBanner p {
+  font-size: small;
+}
+.smallBannerText h1 {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+.bigBannerText h1 {
+  font-size: 6vw;
+  margin-bottom: 3rem;
+}
+.bigBanner {
+  height: 400px;
+}
+.smallBanner {
+  height: 300px;
+}
+.smallBannerText {
+  margin-left: 10px;
+  margin-top: 2rem;
+}
+}
+

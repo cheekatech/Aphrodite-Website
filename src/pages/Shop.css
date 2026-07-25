@@ -1,0 +1,102 @@
+.shop {
+  padding-top: 5rem;
+  color: #3f2305;
+  background-color: #f5f5f5;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+    box-sizing: border-box;
+}
+.shopHero {
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+}
+.shopHero h1 {
+  color: #dfd7bf;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+.shopContent {
+  display: flex;
+  gap: 2vw;
+  background-color: #dfd7bf;
+  padding: 2vw;
+  width: 80vw;
+  margin: 5vw auto;
+  align-items: center;
+  justify-content: center;
+}
+.shopContentContainer {
+  padding-top: 5rem;
+  background-color: #dfd7bf;
+  color: #3f2305;
+  width: 18vw;
+  height: 15vw;
+  background-size: cover;
+  background-position: center;
+}
+.shopContentContainer:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.shopContentContainer h3 {
+  font-size: 2vw;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+.shopContent {
+    gap: 1rem;
+    width: 90vw;
+  }
+  .shopContentContainer {
+    width: 20vw;
+    height: 25vw;
+  }
+  .shopContentContainer h3 {
+  font-size: 3vw;
+  text-align: center;
+}
+}
+
+@media (max-width: 608px) {
+  .shopHero h1 {
+  font-size: 4rem;
+}
+}
+
+@media (max-width: 480px) {
+  .shop {
+  padding-top: 9rem;
+  }
+  .shopHero h1 {
+  font-size: 12vw
+}
+.shopContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5vw;
+  padding: 2vw;
+  background-color: #f5f5f5;
+  margin: 5vw;
+}
+.shopContentContainer {
+  padding-top: 3rem;
+  background-color: #dfd7bf;
+  color: #3f2305;
+  width: 40vw;
+  height: 40vw;
+}
+.shopContentContainer h3 {
+  font-size: larger;
+}
+}

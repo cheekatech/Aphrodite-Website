@@ -1,0 +1,89 @@
+.profilePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  color: #3f2305;
+  background-color: #f5f5f5;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+    box-sizing: border-box;
+
+  
+
+}
+.profilePage .profileBody {
+  background-color: white;
+  width: 50vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  gap: 2rem;
+}
+.profileImageSection {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.profileImageWrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px dashed #dfd7bf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.profileImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profilePlaceholder {
+  font-size: 0.85rem;
+  color: #dfd7bf;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.uploadHint {
+  font-size: 0.8rem;
+  color: #dfd7bf;
+  margin-top: 0.5rem;
+}
+
+.profileDetails {
+  flex: 1;
+  width: 80%;
+  min-width: 250px;
+}
+.profileDetails h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #3f2305;
+}

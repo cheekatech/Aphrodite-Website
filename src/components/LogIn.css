@@ -1,0 +1,96 @@
+.loginHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  background-color: #f5f5f5;
+  color: #3f2305;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+  box-sizing: border-box;
+}
+
+.loginBox {
+  width: 100vw;
+  max-width: 380px;
+  padding: 2rem;
+  border: 1px solid #3f2305;
+  border-radius: 8px;
+}
+
+.loginHome .loginBox h2 {
+  margin-bottom: 2rem;
+}
+.floatingGroup {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.floatingInput {
+  width: 100%;
+  padding: 1rem 0.75rem 0.4rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  background: transparent;
+}
+
+.floatingInput:focus {
+  border-color: #3f2305;
+}
+
+.floatingLabel {
+  position: absolute;
+  left: 0.75rem;
+  top: 1rem;
+  font-size: 1rem;
+  color: #888;
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
+
+.floatingInput:focus + .floatingLabel,
+.floatingInput:not(:placeholder-shown) + .floatingLabel {
+  top: 0.15rem;
+  font-size: 0.75rem;
+  color: #3f2305;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #3f2305;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.toggleText {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.toggleText span {
+  color: #3f2305;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media (max-width: 480px) {
+  .loginHome {
+    padding-top: 14rem;
+  }
+  .loginBox {
+  width: 90vw;
+}
+}

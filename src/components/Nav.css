@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  box-shadow: 2px 2px 5px #3f2305;
+}
+.nav .logo {
+  margin: 25px;
+  display: block;
+  color: #3f2305;
+  text-decoration: none;
+}
+.nav .navBar {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin: auto;
+}
+.nav .searchBar {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  z-index: 1500;
+  position: relative;
+}
+
+.searchDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #f5f5f5;
+  border: 1px solid #3f2305;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px #dfd7bf;
+  z-index: 100;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.searchResultItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: #3f2305;
+}
+
+.searchResultItem:hover {
+  background-color: #dfd7bf;
+}
+
+.nav .searchBar input {
+  height: 30px;
+  padding: 10px;
+  margin-right: -15px;
+  border:1px  solid #3f2305;
+  border-radius: 20px;
+  width: 100%;
+  background-color: #dfd7bf;
+  color: #3f2305;
+}
+.nav .searchBar button {
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  background-color: transparent;
+  border-radius: 0 50% 50% 0;
+  border: none;
+  cursor: pointer;
+}
+.nav .searchBar button img {
+  margin-top: 3px;
+}
+.nav .navMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: auto;
+}
+.nav .navMenu a {
+  text-decoration: none;
+  color: #3f2305;
+  font-family: "Calistoga", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.3s ease;
+  position: relative;
+}
+.nav .navBar .cart button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 20px;
+  display: block;
+  margin-top: 13px;
+  transition: 0.3s;
+  border-bottom: solid transparent;
+  border-right: solid transparent;
+  border-left: solid transparent;
+  border-top: solid transparent;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #dfd7bf8e ;
+  position: relative;
+}
+.nav .navBar .cart button:hover {
+  background-color: #dfd7bf;
+}
+.nav .navBar .cart .cartCount {
+  position: absolute;
+  background-color: #3f2305;
+  color: #f5f5f5;
+  padding: 0.3rem;
+  border-radius: 40%;
+  font-size: xx-small;
+  bottom: 1.4rem;
+}
+.nav .navMenu a.active {
+  color: #dfd7bf;
+}
+.nav .navMenu a:hover::before, .nav .navMenu a.active::before {
+  content: "";
+  background: #dfd7bf;
+  margin-top: 22px;
+  height: 2px;
+  position: absolute;
+  animation: slide 0.3s ease forwards;
+}
+@keyframes slide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+.nav .navMenu a:hover {
+  color: #dfd7bf;
+}
+
+
+#hamburger,
+#sideBar {
+  display: none;
+}
+
+
+@media (max-width: 680px) {
+    .nav .navMenu {
+    display: none;
+  }
+  .logo {
+    position: fixed;
+    z-index: 2000;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px;
+    left: -10px;
+  }
+  .menu-icons {
+    display: none;
+  }
+  #sideBar {
+    margin: 0;
+    padding-top: 10rem;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 80%;
+    left: -80%;
+    height: 100vh;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: 0.6s;
+  }
+  #sideBar.active {
+    left: 0;
+  }
+  #sideBar a {
+    text-decoration: none;
+    color: #3f2305;
+    margin-top: 10%;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: 0.6s ease;
+  }
+  #sideBar a:hover, #homeNav.active, #aboutNav.active, #servicesNav.active, #portfolioNav.active, #contactNav.active {
+    cursor: pointer;
+    background-color: #dfd7bf;
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  #sideBar a.social-icon:hover {
+    cursor: pointer;
+    background-color: transparent;
+    width: auto;
+  }
+  
+
+
+  
+  #hamburger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1500;
+    height: 40px;
+    width: 40px;
+    right: 20%;
+    top: 20px;
+    margin-right: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  #hamburger span {
+    position: absolute;
+    display: block;
+    background: #3f2305;
+    width: 80%;
+    height: 3px;
+    border-radius: 20px;
+    top: 50%;
+    transition: 0.6s;
+  }
+  #hamburger span:nth-child(1) {
+    top: 25%;
+  }
+  #hamburger span:nth-child(3) {
+    top: 75%;
+  }
+  #hamburger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  #hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  #hamburger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .socials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    color: #3f2305;
+  }
+  .social-icons {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+  }
+  .social-icon img {
+    height: 30px;
+    width: 30px;
+  }
+  .sideBar-footer {
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    display: block;
+    background-color: #3f2305;
+  }
+
+  .nav .navBar .cart {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .nav .navBar .cart button {
+    margin-top: 0;
+  }
+  .nav .searchBar {
+  width: 45%;
+  margin-top: 5px;
+}
+}
+
+@media (max-width: 480px) {
+
+
+  .nav {
+    height: 9rem;
+  }
+  .nav .navBar {
+    display: flex;
+    flex-direction: column;
+    height: 14rem;
+    align-items: center;
+  }
+  .searchResultItem img {
+    max-width: 50px;
+  }
+  .nav .logo {
+    width: 100px;
+    margin: 20px;
+}
+.nav .searchBar {
+  background-color: #3f2305;
+  width: 100vw;
+  padding-left: 15vw;
+  padding-top: 1.08rem;
+  padding-bottom: 1.08rem;
+  z-index: 500;
+}
+.nav .searchBar input {
+  height: 30px;
+  width: 70vw;
+  padding: 10px;
+  margin-right: -15px;
+  border:1px  solid #3f2305;
+  border-radius: 20px;
+  background-color: #dfd7bf;
+  color: #3f2305;
+}
+.nav .searchBar button {
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  background-color: transparent;
+  border-radius: 0 50% 50% 0;
+  border: none;
+  cursor: pointer;
+}
+
+}

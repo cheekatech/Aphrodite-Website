@@ -1,0 +1,32 @@
+.newsLetter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 200px;
+}
+.newsLetter h2 {
+  font-size: 1.5rem;
+  margin: 10px;
+  color: #dfd7bf;
+}
+.newsLetter p {
+  font-size: 0.8rem;
+  color: #f5f5f5;
+  margin: 10px;
+}
+.newsLetter input {
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 250px;
+}
+.newsLetter button {
+  width: 80px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #dfd7bf;
+  color: #3f2305;
+  border: none;
+  cursor: pointer;
+}

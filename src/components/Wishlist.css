@@ -1,0 +1,30 @@
+.noWishlist {
+  text-align: center;
+  margin-top: 10rem;
+}
+.wishlistHome {
+  padding-top: 5rem;
+  color: #3f2305;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+    box-sizing: border-box;
+}
+th, td {
+  width: 20vw;
+  background-color: #dfd7bf;
+  padding: 1rem;
+  text-align: center;
+  font-size: larger;
+}
+.wishlistHome td button {
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 480px) {
+}

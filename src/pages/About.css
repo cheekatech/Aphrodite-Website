@@ -1,0 +1,273 @@
+
+
+.about {
+  padding-top: 5rem;
+  color: #3f2305;
+  background-color: #f5f5f5;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "GRAD" 0;
+    box-sizing: border-box;
+}
+.aboutHero {
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+}
+.aboutHero h1 {
+  color: #dfd7bf;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+.historyBody {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #dfd7bf;
+  height: 60vw;
+  margin: 5rem;
+}
+.historyBody .historyText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vw;
+  padding-left: 2vw;
+}
+.historyBody .historyText h2 {
+  text-align: left;
+  font-size: 3.5vw;
+}
+.historyBody .historyText p {
+  margin-top: 2vw;
+  font-size: 1.5vw;
+  width: 40vw;
+}
+.historyBody .historyImage img {
+  width: 40vw;
+  height: 40vw;
+  padding-right: 2vw;
+  display: block;
+  margin-top: 10vw;
+}
+
+.aboutAphrodite {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #dfd7bf;
+  height: 40.3vw;
+  margin: 5rem;
+}
+.aboutAphrodite .aboutAphroditeText {
+  margin-top: 2rem;
+  width: 40vw;
+}
+.aboutAphrodite .aboutAphroditeText h2 {
+  text-align: left;
+  font-size: 3.5vw;
+}
+.aboutAphrodite .aboutAphroditeText p {
+  margin-top: 2vw;
+  font-size: 1.5vw;
+  width: 40vw;
+}
+.aboutAphrodite img {
+  width: 40vw;
+  height: 40vw;
+}
+.featuresContainerTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-top: 5rem;
+}
+.featuresContainer {
+  background-color: #dfd7bf;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.featuresContainer .features {
+box-shadow:  3px 3px 3px 3px #f5f5f5;
+width: 18vw;
+margin: 2.5%;
+text-align: center;
+display: block;
+padding-bottom: 1rem;
+}
+.featuresContainer .features img {
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 20px;
+  height: 10vw;
+}
+.featuresContainer .features h3 {
+  margin-top: 5vw;
+}
+
+
+@media (max-width: 900px) {
+  .historyBody {
+  height: 55vw;
+  margin: 3vw;
+}
+.historyBody .historyText {
+  margin-top: 7.5vw;
+}
+.historyBody .historyText h2 {
+  font-size: 5vw;
+}
+.historyBody .historyText p {
+  font-size: 2vw;
+  width: 45vw;
+}
+.historyBody .historyImage img {
+  width: 40vw;
+  height: 40vw;
+  padding-right: 2vw;
+  display: block;
+  margin-top: 7.5vw;
+}
+.aboutAphrodite {
+  height: 40.6vw;
+  margin: 3vw;
+}
+.aboutAphrodite .aboutAphroditeText {
+  width: 55vw;
+}
+.aboutAphrodite .aboutAphroditeText h2 {
+  font-size: 5vw;
+}
+.aboutAphrodite .aboutAphroditeText p {
+  margin-top: 2vw;
+  font-size: 2vw;
+  width: 55vw;
+}
+.aboutAphrodite img {
+  width: 35vw;
+}
+
+}
+
+@media (max-width: 608px) {
+  .aboutHero h1 {
+  font-size: 4rem;
+}
+
+.featuresContainerTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  
+}
+.featuresContainer .features {
+  width: 20vw;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.featuresContainer .features img {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 10px;
+  height: 80px;
+}
+.featuresContainer .features h3 {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.historyBody {
+    flex-direction: column;
+    height: auto;
+    margin: 5rem;
+    align-items: center;
+  }
+  .historyBody .historyText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.historyBody .historyText h2 {
+  font-size: 1.3rem;
+}
+.historyBody .historyText p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 95%;
+}
+.historyBody .historyImage img {
+  width: 60vw;
+  height: 60vw;
+  padding-right: 0;
+  margin-bottom: 1rem;
+}
+.aboutAphrodite {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 5rem;
+}
+.aboutAphrodite .aboutAphroditeText {
+  margin-top: 2.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-left: 5vw;
+}
+.aboutAphrodite .aboutAphroditeText h2 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.aboutAphrodite .aboutAphroditeText p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 95%;
+}
+.aboutAphrodite img {
+  margin-top: .2rem;
+  width: 60vw;
+  height: 80vw;
+}
+}
+
+
+  
+@media (max-width: 480px) {
+.about {
+  padding-top: 9rem;
+}
+  .aboutHero h1 {
+    font-size: 2.2rem;
+  }
+  
+
+.featuresContainerTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.featuresContainer .features {
+  width: 40vw;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.historyBody {
+    margin: 2rem;
+  }
+  .historyBody .historyImage img {
+  width: 80vw;
+  height: 80vw;
+}
+.aboutAphrodite {
+  margin: 2rem;
+}
+.aboutAphrodite img {
+  width: 80vw;
+}
+}
