@@ -3,7 +3,7 @@ import Nav from "../components/Nav.jsx";
 import NewsLetter from "../components/NewsLetter.jsx";
 import Footer from "../components/Footer.jsx";
 import shopHero from "../assets/pageImages/shopHero.avif";
-import men from "../assets/pageImages/Men.jpeg";
+import men from "../assets/pageImages/men.jpeg";
 import women from "../assets/pageImages/women.jpeg";
 import sportWears from "../assets/pageImages/sportWears.webp";
 import newArrivals from "../assets/pageImages/newArrivals.avif";
