@@ -210,7 +210,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 200,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["khaki", "Black", "Peach", "White"],
   },
   {
     id: 2,
@@ -225,7 +225,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 123,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["White", "Khaki", "Black", "Blue"],
   },
   {
     id: 3,
@@ -240,7 +240,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 204,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Khaki", "Peach", "Blue", "Black"],
   },
   {
     id: 4,
@@ -255,7 +255,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 64,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Brown", "Black", "White", "Navy"],
   },
   {
     id: 5,
@@ -270,7 +270,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 276,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Coffee", "Navy", "Blue", "Black"],
   },
   {
     id: 6,
@@ -285,7 +285,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 20,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Red", "Black", "White", "Blue"],
   },
   {
     id: 7,
@@ -315,7 +315,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 24,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Khaki", "Black", "Blue", "Gray"],
   },
   {
     id: 9,
@@ -345,7 +345,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 9,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Black", "Red", "White", "Yellow"],
   },
   {
     id: 11,
@@ -423,7 +423,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 100,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Brown", "Red", "Black", "White"],
   },
   {
     id: 17,
@@ -436,7 +436,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 100,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Khaki", "Peach", "Cream", "Red"],
   },
   {
     id: 18,
@@ -449,7 +449,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 80,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["White", "Off-white", "Gold", "Black"],
   },
   {
     id: 19,
@@ -462,7 +462,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     star: stars,
     rating: 80,
     addtocart: "",
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Black", "Red", "Army-green", "White"],
   },
   {
     id: 20,
@@ -567,7 +567,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     Image: [flashSales2, flashSales2T1, flashSales2T2, flashSales2T3],
     rating: 203,
     star: stars,
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Black", "Blue", "Red", "White"],
 
   },
   { 
@@ -579,7 +579,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     Image: [flashSales3, flashSales3T1, flashSales3T2, flashSales3T3],
     rating: 214,
     star: stars,
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["White", "Pink", "Black", "Brown"],
   },
   { 
     id: 29, 
@@ -590,7 +590,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     Image: [flashSales4, flashSales4T1, flashSales4T2, flashSales4T3],
     rating: 114,
     star: stars,
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Khaki", "Yellow", "Black", "White"],
   },
   { 
     id: 30, 
@@ -601,7 +601,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     Image: [flashSales5, flashSales5T1, flashSales5T2, flashSales5T3],
     rating: 245,
     star: stars,
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Brown", "Red", "Pink", "White"],
   },
   { 
     id: 31, 
@@ -624,19 +624,19 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     Image: [flashSales7, flashSales7T1, flashSales7T2, flashSales7T3],
     rating: 234,
     star: stars,
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Khaki", "Army-green", "Black", "Gray"],
   },
 
   { 
     id: 33, 
     category: "Flash Sales",
-    name: "Women Fashion glasses", 
+    name: "Women Fashion glasses 2 n 1", 
     price: 5, 
     discount: 70, 
     Image: [flashSales8, flashSales8T1, flashSales8T2, flashSales8T3],
     rating: 233,
     star: stars,
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Black/Pink", "Black/Khaki", "Black/Gold", "White/Pink"],
   },
 
   { 
@@ -648,7 +648,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     Image: [flashSales9, flashSales9T1, flashSales9T2, flashSales9T3],
     rating: 153,
     star: stars,
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Khaki", "Gray", "Black", "Army-green"],
   },
 
   { 
@@ -660,7 +660,7 @@ import flashSales10T3 from "../assets/productImages/flashSales10-4.avif";
     Image: [flashSales10, flashSales10T1, flashSales10T2, flashSales10T3],
     rating: 222,
     star: stars,
-    procolors: ["Brown", "Black", "Red", "White"],
+    procolors: ["Khaki", "Green", "Black", "Pink"],
   },
   
 ];
