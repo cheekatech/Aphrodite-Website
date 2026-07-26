@@ -325,7 +325,7 @@
 } 
 @media (max-width: 480px) {
   .productDetails {
-  padding-top: 9rem;
+  padding-top: 7rem;
 }
   .relatedGrid {
   grid-template-columns: repeat(2, 1fr);

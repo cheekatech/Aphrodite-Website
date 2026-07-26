@@ -5,6 +5,7 @@ import { useAuth } from "../components/AuthContext";
 import { Outlet } from "react-router-dom";
 import LogIn from "../components/LogIn";
 import logOut from "../assets/icons/logOut.png";
+import accountImage from "../assets/pageImages/account.jpg";
 
 function Account() {
 
@@ -22,6 +23,9 @@ function Account() {
   return (
     <>
       <div className="account">
+        <div className="heroImage">
+          <img src={accountImage} alt="Account Hero" />
+        </div>
         <aside className="accountBar">
           <p className="welcomeText">Hello, {user.name}</p>
 

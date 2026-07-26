@@ -17,11 +17,15 @@
   box-sizing: border-box;
   padding-top: 2rem;
 }
+.heroImage {
+  display: none;
+}
 
 .account .accountBar {
   display: flex;
   flex-direction: column;
   padding-top: 10rem;
+  margin-top: -1rem;
   height: 50rem;
   align-items: center;
   width: 15%;
@@ -83,10 +87,18 @@
   padding-top: 0;
   flex-direction: column;
 }
+.heroImage {
+  display: block;
+  width: 100vw;
+  margin-top: 7rem;
+}
+.heroImage img {
+  width: 100%;
+  height: 7rem;
+}
 .account .accountBar {
   flex-direction: row;
   padding-top: 0;
-  margin-top: 9rem;
   height: 5rem;
   width: 100vw;
   overflow-x: scroll;

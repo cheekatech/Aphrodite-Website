@@ -89,31 +89,29 @@ function Footer () {
     <div class="footer-body">
       <div>
         <h3>Company Info:</h3>
-        <p><a href="/about#historyAphrodite">History of Aphrodite</a></p>
-        <p><a href="/about#aboutAphrodite">About Aphrodite</a></p>
-        <p><a href="#">Privacy Policy</a></p>
-        <p><a href="#">Terms of Service</a></p>
+        <p><Link to="/about#historyAphrodite">History of Aphrodite</Link></p>
+        <p><Link to="/about#aboutAphrodite">About Aphrodite</Link></p>
+        <p><Link to="#">Privacy Policy</Link></p>
+        <p><Link to="#">Terms of Service</Link></p>
       </div>
 
       <div>
         <h3>Account:</h3>
-        <p><a href="/account#profile">Profile</a></p>
+        <p><Link to="/account#profile">Profile</Link></p>
         
-        <p><a href="/account/wishlist">Wishlist</a></p>
-        <p><a href="/account/checkout">Checkout</a></p>
-        <p><a href="/cart#shippingInfo">Shipping Information</a></p>
-        <p><a href="/contact#contactInfo">Report any Suspicious Activity</a></p>
-      </div>
-      <div>
-        <h3>Contact Us</h3>
-        <p><a href="/contact#contactInfo">Send us a message</a></p>
-        <p>Phone: <i><a href="tel:+1234567890">+1 234 567 890</a></i></p>
-        <p>Email: <i><a href="mailto:info@aphrodite.com">info@aphrodite.com</a></i></p>
+        <p><Link to="/account/wishlist">Wishlist</Link></p>
+        <p><Link to="/account/checkout">Checkout</Link></p>
+        <p><Link to="/cart#shippingInfo">Shipping Information</Link></p>
+        <p><Link to="/contact#contactInfo">Report any Suspicious Activity</Link></p>
       </div>
       <div>
         <h5>Download the Aphrodite app on:</h5>
-        <a href="#" target="_blank"><img src={googlePlay} alt="Google Play" /></a>
-        <a href="#" target="_blank"><img src={appStore} alt="App Store" /></a>
+        <a href="https://play.google.com/store/apps/details?id=com.aphrodite.app" target="_blank" rel="noopener noreferrer">
+          <img src={googlePlay} alt="Google Play" />
+        </a>
+        <a href="https://apps.apple.com/us/app/aphrodite/id1234567890" target="_blank" rel="noopener noreferrer">
+          <img src={appStore} alt="App Store" />
+        </a>
       </div>
     </div>
 
@@ -121,21 +119,39 @@ function Footer () {
       <div>
         <h3>Pay with:</h3>
         <section>
-          <a href="#"><img src={visa} alt="Visa" /></a>
-          <a href="#"><img src={mastercard} alt="Mastercard" /></a>
-          <a href="#"><img src={paypal} alt="PayPal" /></a>
-          <a href="#"><img src={googlePay} alt="Google Pay" /></a>
-          <a href="#"><img src={applePay} alt="Apple Pay" /></a>
+          <a href="https://www.visa.com" target="_blank" rel="noopener noreferrer">
+            <img src={visa} alt="Visa" />
+          </a>
+          <a href="https://www.mastercard.com" target="_blank" rel="noopener noreferrer">
+            <img src={mastercard} alt="Mastercard" />
+          </a>
+          <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">
+            <img src={paypal} alt="PayPal" />
+          </a>
+          <a href="https://www.google.com/pay" target="_blank" rel="noopener noreferrer">
+            <img src={googlePay} alt="Google Pay" />
+          </a>
+          <a href="https://www.apple.com/apple-pay" target="_blank" rel="noopener noreferrer">
+            <img src={applePay} alt="Apple Pay" />
+          </a>
         </section>
       </div>
 
       <div>
         <h3>Contact us on our social media handles:</h3>
         <section>
-          <a href="#"><img src={facebook} alt="Facebook" /></a>
-          <a href="#"><img src={whatsApp} alt="Whatsapp" /></a>
-          <a href="#"><img src={instagram} alt="Instagram" /></a>
-          <a href="#"><img src={linkedIn} alt="linkedin" /></a>
+          <a href="https://www.facebook.com/aphrodite" target="_blank" rel="noopener noreferrer">
+            <img src={facebook} alt="Facebook" />
+          </a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+            <img src={whatsApp} alt="Whatsapp" />
+          </a>
+          <a href="https://www.instagram.com/aphrodite" target="_blank" rel="noopener noreferrer">
+            <img src={instagram} alt="Instagram" />
+          </a>
+          <a href="https://www.linkedin.com/company/aphrodite" target="_blank" rel="noopener noreferrer">
+            <img src={linkedIn} alt="linkedin" />
+          </a>
         </section>
       </div>
     </div>

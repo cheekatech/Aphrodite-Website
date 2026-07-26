@@ -14,9 +14,6 @@
     "wdth" 100,
     "GRAD" 0;
     box-sizing: border-box;
-
-  
-
 }
 .profilePage .profileBody {
   background-color: white;
@@ -82,8 +79,15 @@
   padding: 1rem 0;
   border-bottom: 1px solid #f5f5f5;
 }
-
 .detailLabel {
   font-weight: 600;
   color: #3f2305;
+}
+@media (max-width: 480px) {
+  .profilePage {
+    padding-top: 2rem;
+  }
+  .profileBody {
+    width: 90vw;
+  }
 }

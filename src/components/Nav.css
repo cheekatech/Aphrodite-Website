@@ -112,8 +112,6 @@
   border-left: solid transparent;
   border-top: solid transparent;
   border-radius: 50%;
-  padding: 5px;
-  background-color: #dfd7bf8e ;
   position: relative;
 }
 .nav .navBar .cart button:hover {
@@ -123,10 +121,11 @@
   position: absolute;
   background-color: #3f2305;
   color: #f5f5f5;
-  padding: 0.3rem;
+  padding: 0.2rem;
   border-radius: 40%;
   font-size: xx-small;
   bottom: 1.4rem;
+  right: 0.004rem;
 }
 .nav .navMenu a.active {
   color: #dfd7bf;
@@ -303,12 +302,12 @@
 
 
   .nav {
-    height: 9rem;
+    height: 7rem;
   }
   .nav .navBar {
     display: flex;
     flex-direction: column;
-    height: 14rem;
+    height: 11rem;
     align-items: center;
   }
   .searchResultItem img {
@@ -322,8 +321,8 @@
   background-color: #3f2305;
   width: 100vw;
   padding-left: 15vw;
-  padding-top: 1.08rem;
-  padding-bottom: 1.08rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   z-index: 500;
 }
 .nav .searchBar input {
@@ -345,5 +344,7 @@
   border: none;
   cursor: pointer;
 }
-
+  #hamburger {
+    top: 18px;
+  }
 }

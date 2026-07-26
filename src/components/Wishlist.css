@@ -27,4 +27,7 @@ th, td {
 }
 
 @media (max-width: 480px) {
+  .wishlistHome {
+    padding-top: 2rem;
+  }
 }
