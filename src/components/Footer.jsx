@@ -102,8 +102,15 @@ function Footer () {
         <p><Link to="/account/wishlist">Wishlist</Link></p>
         <p><Link to="/account/checkout">Checkout</Link></p>
         <p><Link to="/cart#shippingInfo">Shipping Information</Link></p>
-        <p><Link to="/contact#contactInfo">Report any Suspicious Activity</Link></p>
+        
       </div>
+      <div>
+        <h3>Contact:</h3>
+        <p><Link to="/contact">Contact us</Link></p>
+        <p><Link to="/contact#contactInfo">Report any Suspicious Activity</Link></p>
+        <p><Link to="/contact#support">Customer Support</Link></p>
+      </div>
+
       <div>
         <h5>Download the Aphrodite app on:</h5>
         <a href="https://play.google.com/store/apps/details?id=com.aphrodite.app" target="_blank" rel="noopener noreferrer">

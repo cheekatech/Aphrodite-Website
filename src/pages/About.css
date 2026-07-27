@@ -151,12 +151,15 @@ padding-bottom: 1rem;
 .aboutAphrodite img {
   width: 35vw;
 }
+.aboutHero h1 {
+  font-size: 8vw;
+}
 
 }
 
 @media (max-width: 608px) {
   .aboutHero h1 {
-  font-size: 4rem;
+  font-size: 10vw;
 }
 
 .featuresContainerTitle {

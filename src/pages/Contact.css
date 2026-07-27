@@ -18,7 +18,7 @@
 }
 .contactHero h1 {
   color: #dfd7bf;
-  font-size: 5rem;
+  font-size: 9vw;
   text-align: center;
   padding-top: 8rem;
 }
@@ -129,7 +129,7 @@
 }
 @media (max-width: 768px) {
   .contactHero h1 {
-  font-size: 4.3rem;
+  font-size: 9vw;
 }
 .contactForm {
   margin-top: 2rem;
@@ -142,7 +142,7 @@
 }
 @media (max-width: 608px) {
   .contactHero h1 {
-  font-size: 3.5rem;
+  font-size: 9.5vw;
 }
 .contactAddress h2 {
   font-size: larger;
